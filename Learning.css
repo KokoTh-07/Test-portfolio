@@ -1,0 +1,210 @@
+body,
+html {
+    height: 100%;
+    color: aliceblue;
+    font-family: 'Prompt', sans-serif;
+}
+
+@keyframes multi-color {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.profile-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 100px;
+
+}
+
+.multi-color {
+    background: linear-gradient(90deg, #00eaff, #ffffff, #00eaff);
+    background-size: 1000% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: multi-color 2s linear infinite;
+}
+
+body {
+    background: linear-gradient(135deg, #080622, #324bb4);
+    background-size: cover;
+}
+
+.Info {
+    display: flex;
+    padding-top: 5%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    overflow: auto;
+}
+
+.name {
+    transform: scale(1);
+    font-size: 21px;
+    margin: 5px;
+    color: aliceblue;
+    font-family: sans-serif;
+    padding: 2px 21px;
+    width: auto;
+    border-radius: 1.5vh;
+    box-shadow: 4px 4px 15px black;
+    position: relative;
+    transition: box-shadow 1s, transform 0.2s ease, border 0.5s;
+    user-select: none;
+
+}
+
+.name:active {
+    color: black;
+    background-color: aliceblue;
+    box-shadow: 4px 4px 10px white;
+    text-transform: 5s;
+}
+
+.name:hover {
+    box-shadow: 0px 0px 14px 5px rgb(255, 255, 255);
+    transform: scale(1.07);
+    border-color: none;
+}
+
+.Picture {
+    width: 310px;
+    height: 600px;
+    object-fit: cover;
+    margin: 25px;
+    position: relative;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+.Picture:hover {
+    transform: scale(1.05) translateY(-26px);
+    transition: 0.4s ease;
+    transform-origin: center bottom;
+    box-shadow: 10px 10px #ffffff;
+}
+
+a {
+    font-size: 24px;
+}
+
+.Faculty {
+    text-align: center;
+    font-size: 22px;
+    user-select: none;
+}
+
+.right .icon-head {
+    width: 10px 10px;
+    transition: all 0.2s ease;
+}
+
+.fa-user {
+    transition: all 0.2s ease;
+    padding: 10px 13px 10px 13px;
+    border-radius: 10px;
+    border-radius: 10px;
+}
+.fa-user:hover{
+    transform: scale(1.2);
+    background-color: #f0f8ff;
+    color: #002147;
+}
+.fa-award {
+    transition: all 0.2s ease;
+    padding: 10px 14.5px 10px 14.5px;
+    border-radius: 10px;
+}
+.fa-award:hover {
+    transform: scale(1.2);
+    background-color: #f0f8ff;
+    color: #002147;
+}
+.fa-wrench {
+    transition: all 0.2s ease;
+    padding: 10px 11.5px 10px 11.5px;
+    border-radius: 10px;
+}
+.fa-wrench:hover{
+    transform: scale(1.2);
+    background-color: #f0f8ff;
+    color: #002147;
+}
+.fa-graduation-cap {
+    transition: all 0.2s ease;
+    padding: 10px 9px 10px 9px;
+    border-radius: 10px;
+}
+.fa-graduation-cap:hover{
+    transform: scale(1.2);
+    background-color: #f0f8ff;
+    color: #002147;
+}
+
+.fa-house {
+    width: 10px 10px;
+    transition: all 0.2s ease;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.fa-house:hover {
+    transform: scale(1.2);
+    background-color: #f0f8ff;
+    color: #002147;
+}
+
+.fa-solid {
+    color: rgba(0, 255, 255, 0.842);
+}
+
+.fa-solid:active{
+    transform: 1s ease;
+    color: #FFD700;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: none;
+    width: auto;
+    padding: 20px 15px 25px 15px;
+    border-radius: 15px;
+}
+
+.left {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.right {
+    display: flex;
+    gap: 23px;
+    margin-right: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.head-name {
+    margin: 0;
+    font-size: 28px;
+    user-select: none;
+}
